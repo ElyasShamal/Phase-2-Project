@@ -8,6 +8,7 @@ body {
   background-image: url("https://image.tomatomovies.com/region2/en/1280px/20230523/82cxEifGLr7YTNcc0DNV0ya7Osq.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  filter: brightness(100%);
 }
 
 .App-header {
@@ -56,4 +57,41 @@ input {
   padding: 10px 20px;
   border-radius: 50px;
   font-size: 15px;
+}
+
+.section-info {
+  position: relative;
+  width: 600px;
+  left: 190px;
+  margin-top: 150px;
+  color: white;
+}
+
+.section-title {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+section p {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+section div {
+  width: 800px;
+  margin-top: 50px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Watch {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 2px solid white;
 }
