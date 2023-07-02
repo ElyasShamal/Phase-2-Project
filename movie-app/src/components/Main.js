@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import SignUpForm from "./SignUpForm";
+import SignUpForm from "./SignUpForm/SignUpForm";
 
 function Main() {
   const dialogRef = useRef(null);
