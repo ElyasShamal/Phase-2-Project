@@ -10,6 +10,7 @@ function Main() {
   const handleClose = () => {
     dialogRef.current.close();
   };
+
   return (
     <main className="container">
       <section className="section-info">
@@ -36,6 +37,12 @@ function Main() {
           </button>
           <SignUpForm />
         </dialog>
+      </section>
+
+      <section className="data">
+        <h1>WHAT'S HOT</h1>
+
+        <div className="mainContainer"></div>
       </section>
     </main>
   );
