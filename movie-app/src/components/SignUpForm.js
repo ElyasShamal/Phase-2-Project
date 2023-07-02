@@ -2,7 +2,7 @@ import React from "react";
 
 function SignUpForm() {
   return (
-    <form>
+    <form className="FormSignUp">
       <label for="name">Name</label>
       <input type="text" placeholder="Enter Your Name" required></input>
       <label>Email</label>

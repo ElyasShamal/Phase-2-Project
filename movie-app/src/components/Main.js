@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
+import SignUpForm from "./SignUpForm";
 
 function Main() {
+  const dialogRef = useRef(null);
+  const handleClick = () => {
+    dialogRef.current.showModal();
+  };
   return (
     <main className="container">
       <section className="section-info">
@@ -17,9 +22,13 @@ function Main() {
 
         <div>
           <h2> Start your 30-day free trial </h2>
-          <button className="Watch">Watch Now</button>
+          <button onClick={handleClick} className="Watch">
+            Watch Now
+          </button>
         </div>
-        <dialog></dialog>
+        <dialog ref={dialogRef}>
+          <SignUpForm />
+        </dialog>
       </section>
     </main>
   );
