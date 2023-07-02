@@ -59,6 +59,10 @@ nav input {
   font-size: 15px;
 }
 
+.container {
+  width: 800px;
+}
+
 .section-info {
   position: relative;
   width: 600px;
@@ -94,4 +98,19 @@ section div {
   padding: 10px 20px;
   font-size: 18px;
   border: 2px solid white;
+}
+
+dialog {
+  margin: auto;
+  left: 900px;
+  width: 250px;
+  padding: 0px 20px;
+}
+.close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
 }

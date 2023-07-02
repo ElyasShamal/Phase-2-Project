@@ -6,6 +6,10 @@ function Main() {
   const handleClick = () => {
     dialogRef.current.showModal();
   };
+
+  const handleClose = () => {
+    dialogRef.current.close();
+  };
   return (
     <main className="container">
       <section className="section-info">
@@ -27,6 +31,9 @@ function Main() {
           </button>
         </div>
         <dialog ref={dialogRef}>
+          <button onClick={handleClose} className="close">
+            X
+          </button>
           <SignUpForm />
         </dialog>
       </section>
