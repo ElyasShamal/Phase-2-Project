@@ -19,17 +19,7 @@ function Main() {
           <h2> Start your 30-day free trial </h2>
           <button className="Watch">Watch Now</button>
         </div>
-
-        <dialog>
-          <form>
-            <label for="name">Name</label>
-            <input type="text" placeholder="Enter Your Name" required></input>
-            <label>Email</label>
-            <input type="Email" placeholder="Enter Your Email"></input>
-
-            <button>Sign UP</button>
-          </form>
-        </dialog>
+        <dialog></dialog>
       </section>
     </main>
   );
