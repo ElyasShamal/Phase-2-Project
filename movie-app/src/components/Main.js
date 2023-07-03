@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import SignUpForm from "./SignUpForm/SignUpForm";
 
+import Movie from "./Movie";
+
 function Main() {
   const dialogRef = useRef(null);
   const handleClick = () => {
@@ -40,7 +42,9 @@ function Main() {
       </section>
       <section className="data">
         <h1>WHAT'S HOT</h1>
-        <div className="mainContainer"></div>
+        <div className="mainContainer">
+          <Movie />
+        </div>
       </section>
     </main>
   );
