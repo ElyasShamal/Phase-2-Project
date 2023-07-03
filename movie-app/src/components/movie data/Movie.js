@@ -17,7 +17,7 @@ function Movie() {
   }, []);
 
   return (
-    <div>
+    <div className="Data-app">
       <img src={movies[0]?.image} alt={movies[1]?.title} />
       <h1 style={{ color: "white" }}>{movies[1]?.title}</h1>
     </div>

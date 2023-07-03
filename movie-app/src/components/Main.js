@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import SignUpForm from "./SignUpForm/SignUpForm";
 
-import Movie from "./Movie";
+import Movie from "./movie data/Movie";
 
 function Main() {
   const dialogRef = useRef(null);
@@ -42,6 +42,7 @@ function Main() {
       </section>
       <section className="data">
         <h1>WHAT'S HOT</h1>
+
         <div className="mainContainer">
           <Movie />
         </div>
