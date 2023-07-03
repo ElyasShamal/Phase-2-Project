@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function Movie({ moviesData }) {
-  const
+function Movie() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -18,10 +17,15 @@ function Movie({ moviesData }) {
   }, []);
 
   return (
-    <div className="Data-app">
-      <img src={movies[0]?.image} alt={movies[1]?.title} />
-      <h1 style={{ color: "white" }}>{movies[1]?.title}</h1>
-    </div>
+    <>
+      {movies.map((movie) => (
+        <div className="mincontainer">
+          <img src={movie.image} alt={movie.title} />
+          <h1>{movie.title}</h1>
+          <span style={{ color: "white" }}>{movie.rating}</span>
+        </div>
+      ))}
+    </>
   );
 }
 

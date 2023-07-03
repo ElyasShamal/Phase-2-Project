@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import SignUpForm from "./SignUpForm/SignUpForm";
-
 import Movie from "./movie data/Movie";
 
 function Main() {
@@ -41,6 +40,7 @@ function Main() {
         </dialog>
       </section>
       <section className="data">
+        <h1>WHAT'S HOT</h1>
         <Movie />
       </section>
     </main>
