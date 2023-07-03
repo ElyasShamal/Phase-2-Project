@@ -19,15 +19,19 @@ function Movie() {
     startFetching();
   }, []);
 
+  const handleLikes = () => {
+    return;
+  };
+
   return (
     <>
       {movies.map((movie) => (
         <div className="collection" key={movie.id}>
           <img src={movie.image} alt={movie.title} />
           <h2>{movie.title}</h2>
-
           <span style={{ color: "white" }}>
-            <AiFillHeart /> {movie.likes}
+            <AiFillHeart onClick={handleLikes} style={{ color: "red" }} />
+            {movie.likes}
           </span>
           <span style={{ color: "orange" }}>
             <AiFillEye />
