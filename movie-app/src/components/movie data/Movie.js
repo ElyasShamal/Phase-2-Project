@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-function Movie() {
+function Movie({ moviesData }) {
+  const
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {

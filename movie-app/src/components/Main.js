@@ -41,11 +41,7 @@ function Main() {
         </dialog>
       </section>
       <section className="data">
-        <h1>WHAT'S HOT</h1>
-
-        <div className="mainContainer">
-          <Movie />
-        </div>
+        <Movie />
       </section>
     </main>
   );
