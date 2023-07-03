@@ -19,10 +19,10 @@ function Movie() {
   return (
     <>
       {movies.map((movie) => (
-        <div className="mincontainer">
+        <div className="collection" key={movie.id}>
           <img src={movie.image} alt={movie.title} />
           <h1>{movie.title}</h1>
-          <span style={{ color: "white" }}>{movie.rating}</span>
+          <span>{movie.rating}</span>
         </div>
       ))}
     </>
