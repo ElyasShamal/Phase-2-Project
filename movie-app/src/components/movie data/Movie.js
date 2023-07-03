@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import starRating from "./Rating";
+import AiFillEye from "./AiFillEye";
+import { AiFillHeart } from "react-icons/ai";
 
 function Movie() {
   const [movies, setMovies] = useState([]);
@@ -23,7 +25,15 @@ function Movie() {
         <div className="collection" key={movie.id}>
           <img src={movie.image} alt={movie.title} />
           <h2>{movie.title}</h2>
-          <span style={{ color: "orange" }}> {starRating(movie.rating)} </span>
+
+          <span style={{ color: "white" }}>
+            <AiFillHeart /> {movie.likes}
+          </span>
+          <span style={{ color: "orange" }}>
+            <AiFillEye />
+            {movie.views}
+          </span>
+          <p style={{ color: "orange" }}> {starRating(movie.rating)} </p>
         </div>
       ))}
     </>

@@ -7,6 +7,7 @@ function starRating(rating) {
   for (let i = 0; i < 5 - rating; i++) {
     stars += "☆";
   }
+
   return stars;
 }
 
