@@ -145,13 +145,14 @@ section h1 {
   border-radius: 20px;
 }
 
-.collection h1 {
+.collection h2 {
   display: inline-block;
   margin-bottom: 5px;
-  font-size: 20px;
+  font-size: 21px;
+  color: red;
+  padding-top: 20px;
 }
 
 .collection span {
-  color: red;
-  padding-left: 120px;
+  padding-left: 90px;
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import starRating from "./Rating";
 
 function Movie() {
   const [movies, setMovies] = useState([]);
@@ -21,8 +22,8 @@ function Movie() {
       {movies.map((movie) => (
         <div className="collection" key={movie.id}>
           <img src={movie.image} alt={movie.title} />
-          <h1>{movie.title}</h1>
-          <span>{movie.rating}</span>
+          <h2>{movie.title}</h2>
+          <span style={{ color: "orange" }}> {starRating(movie.rating)} </span>
         </div>
       ))}
     </>
