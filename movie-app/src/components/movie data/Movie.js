@@ -13,7 +13,6 @@ function Movie() {
 
     async function startFetching() {
       const moviesData = await fetchMovie();
-      console.log(moviesData);
 
       setMovies(moviesData);
     }

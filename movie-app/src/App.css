@@ -203,3 +203,12 @@ footer a {
   color: black;
   font-size: 20px;
 }
+
+.add-movie {
+  background-color: red;
+  margin-left: 20px;
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+  font-size: 15px;
+}
