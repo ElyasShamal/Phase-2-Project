@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import SignUpForm from "./SignUpForm/SignUpForm";
-import Movie from "./movie data/Movie";
+import SignUpForm from "../SignUpForm/SignUpForm";
+import Movie from "../movie data/Movie";
 
 function Main() {
   const dialogRef = useRef(null);

@@ -156,3 +156,13 @@ section h1 {
 .collection span {
   padding-left: 40px;
 }
+
+.playBtn {
+  display: block;
+  width: 90%;
+  margin: 15px 0px;
+  padding: 5px;
+  color: white;
+  font-size: large;
+  background-color: red;
+}

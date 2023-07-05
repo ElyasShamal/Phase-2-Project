@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import starRating from "./Rating";
-import AiFillEye from "./AiFillEye";
 import { AiFillHeart } from "react-icons/ai";
 
 function Movie() {
@@ -33,11 +32,8 @@ function Movie() {
             <AiFillHeart onClick={handleLikes} style={{ color: "red" }} />
             {movie.likes}
           </span>
-          <span style={{ color: "orange" }}>
-            <AiFillEye />
-            {movie.views}
-          </span>
-          <p style={{ color: "orange" }}> {starRating(movie.rating)} </p>
+          <span style={{ color: "orange" }}> {starRating(movie.rating)} </span>
+          <button className="playBtn">Play</button>
         </div>
       ))}
     </>
