@@ -141,7 +141,7 @@ section h1 {
 
 .collection img {
   width: 280px;
-  height: 407px;
+  height: 360px;
   border-radius: 20px;
 }
 
@@ -165,6 +165,7 @@ section h1 {
   color: white;
   font-size: large;
   background-color: red;
+  border-radius: 20px;
 }
 
 .movie-ref {
@@ -177,10 +178,18 @@ section h1 {
 .movie-ref button {
   position: absolute;
   padding: 10px 20px;
-
   background-color: red;
   color: white;
   margin-left: 95%;
-
   font-size: 23px;
+}
+
+footer {
+  background-color: white;
+  height: 200px;
+  width: 100%;
+}
+
+footer ul {
+  color: red;
 }
