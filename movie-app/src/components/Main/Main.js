@@ -32,7 +32,7 @@ function Main() {
             Watch Now
           </button>
         </div>
-        <dialog ref={dialogRef}>
+        <dialog ref={dialogRef} className="sign-up-dialog">
           <button onClick={handleClose} className="close">
             X
           </button>
