@@ -14,7 +14,7 @@ function Footer() {
     <footer>
       <ul>
         {links.map((link, index) => (
-          <a key={index} href={link.url}>
+          <a key={index} href={link.url} target="_blink">
             <li>
               {link.title === "LinkedIn" && <FaLinkedin />}
               {link.title === "GitHub" && <FaGithub />}

@@ -1,25 +1,23 @@
 import React from "react";
 
 function Nav() {
+  const navItems = [
+    { name: "Home", link: "#home" },
+    { name: "Movies", link: "#movies" },
+    { name: "TV Shows", link: "#tv-shows" },
+  ];
   return (
     <nav className="nav">
       <ul>
-        <a className="link" href="#home">
-          <li>Home</li>
-        </a>
-
-        <a className="link" href="#movies">
-          <li>Movies</li>
-        </a>
-        <a className="link" href="#Tv Shows">
-          <li>Tv Shows</li>
-        </a>
+        {navItems.map((item, index) => (
+          <a key={index} className="link" href={item.link}>
+            <li>{item.name}</li>
+          </a>
+        ))}
       </ul>
       <form>
-        <input type="search" placeholder="Search Movies or Tv Shows" />
+        <input type="search" placeholder="Search Movies or TV Shows" />
       </form>
-
-      {/* <button className="Sign-Up">Sign UP</button> */}
     </nav>
   );
 }

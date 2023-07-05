@@ -8,9 +8,8 @@ function Player({ youtubeId }) {
         height="100%"
         src={`https://www.youtube.com/embed/${youtubeId}`}
         title="title"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen="yes"
+        allowFullScreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       ></iframe>
     </div>
   );
