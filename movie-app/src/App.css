@@ -46,7 +46,7 @@ li {
   list-style-type: none;
 }
 
-nav input {
+.search {
   width: 300px;
   max-width: 100%;
   margin-left: 50px;
@@ -211,4 +211,27 @@ footer a {
   border-radius: 20px;
   color: white;
   font-size: 15px;
+}
+
+.post-dialog {
+  position: relative;
+  left: 74%;
+  top: 70px;
+  padding: 20px 30px;
+  width: 25%;
+}
+
+.post-dialog form {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-dialog label {
+  padding-bottom: 10px;
+}
+
+.submit {
+  margin-top: 30px;
+  color: red;
+  background-color: black;
 }

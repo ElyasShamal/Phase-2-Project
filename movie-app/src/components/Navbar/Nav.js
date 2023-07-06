@@ -42,17 +42,27 @@ function Nav() {
         ))}
       </ul>
       <form>
-        <input type="search" placeholder="Search Movies or TV Shows" />
+        <input
+          className="search"
+          type="search"
+          placeholder="Search Movies or TV Shows"
+        />
       </form>
       <button className="add-movie" onClick={handleDialog}>
         Add Movie
       </button>
-      <dialog ref={dialogRef}>
+      <dialog ref={dialogRef} className="post-dialog">
+        <button className="close" onClick={handleClose}>
+          X
+        </button>
         <form id="form" onSubmit={onSubmit}>
           <label>Image</label>
           <input name="image" placeholder="image Url"></input>
-          <label> Movie Name</label>
-          <input name="title" placeholder="Movie Name"></input>
+          <label>
+            Name
+            <input name="title" placeholder="Movie Name"></input>
+          </label>
+
           <label>Rate</label>
           <select name="rating">
             <option>1</option>
@@ -62,7 +72,9 @@ function Nav() {
             <option>5</option>
           </select>
 
-          <button onClick={handleClose}>Submit</button>
+          <button className="submit" onClick={handleClose}>
+            Submit
+          </button>
         </form>
       </dialog>
     </nav>
