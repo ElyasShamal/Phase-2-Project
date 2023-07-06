@@ -16,7 +16,7 @@ function Main() {
   return (
     <main className="container">
       <section className="section-info">
-        <h2 className="section-title">Spider-Man: Across the Spider-Verse</h2>
+        <h2 className="section-title">Welcome Back</h2>
         <span className="section-span">2023 | PG | Adventure</span>
         <p>
           After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly

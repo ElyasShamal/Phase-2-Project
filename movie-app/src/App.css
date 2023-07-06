@@ -74,7 +74,7 @@ li {
 }
 
 .section-title {
-  font-size: 2.2rem;
+  font-size: 3rem;
   padding-bottom: 20px;
 }
 
@@ -217,8 +217,9 @@ footer a {
   position: relative;
   left: 74%;
   top: 70px;
-  padding: 20px 30px;
+  padding: 20px 30px 30px;
   width: 25%;
+  height: 60%;
 }
 
 .post-dialog form {
@@ -230,8 +231,13 @@ footer a {
   padding-bottom: 10px;
 }
 
+.post-dialog select {
+  padding: 5px;
+}
+
 .submit {
   margin-top: 30px;
-  color: red;
-  background-color: black;
+  color: white;
+  background-color: red;
+  padding: 5px;
 }
