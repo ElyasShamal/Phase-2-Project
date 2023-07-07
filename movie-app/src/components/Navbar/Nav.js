@@ -23,7 +23,7 @@ function Nav() {
     const formData = Object.fromEntries(new FormData(e.target));
     console.log(formData);
 
-    fetch("http://localhost:3333/Movies", {
+    fetch("https://phase-2-backend-json-server-template.onrender.com/Movies", {
       method: "POST",
       headers: {
         accept: "application/json",

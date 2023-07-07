@@ -9,7 +9,9 @@ function Movie() {
 
   useEffect(() => {
     const fetchMovie = () =>
-      fetch("http://localhost:3333/Movies").then((response) => response.json());
+      fetch(
+        "https://phase-2-backend-json-server-template.onrender.com/Movies"
+      ).then((response) => response.json());
 
     async function startFetching() {
       const moviesData = await fetchMovie();
